@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cartographie de l'écosystème spatial français : État, industriels, NewSpace, investisseurs — SpacePulse</title>
+<meta name="description" content="Carte interactive de 98 acteurs du spatial français : pilotage et défense, maîtres d'œuvre, opérateurs, start-up NewSpace, financeurs, recherche et médias, en 8 secteurs.">
+<link rel="canonical" href="https://spacepulse.fr/cartographie/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SpacePulse"><meta property="og:title" content="Cartographie de l'écosystème spatial français : État, industriels, NewSpace, investisseurs — SpacePulse"><meta property="og:description" content="Carte interactive de 98 acteurs du spatial français : pilotage et défense, maîtres d'œuvre, opérateurs, start-up NewSpace, financeurs, recherche et médias, en 8 secteurs."><meta property="og:url" content="https://spacepulse.fr/cartographie/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://spacepulse.fr/"},{"@type":"ListItem","position":2,"name":"Cartographie du spatial français","item":"https://spacepulse.fr/cartographie/"}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>.carto-frame{display:block;width:100%;min-height:900px;border:0;background:transparent;margin-top:-24px}.pg.carto{max-width:1340px}</style>
+</head>
+<body><header class="hdr">
+<a class="logo" href="/" aria-label="SpacePulse — accueil"><svg width="30" height="30" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="15.5" stroke="#fff" stroke-width="1.5"/><path d="M5 17h6l2.5-6 4 12 3-9 2 3H29" stroke="#2F7BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>SPACEPULSE</span></a>
+<nav class="nav" id="menu" aria-label="Rubriques">
+<a href="/#lanceurs">LANCEURS</a><a href="/#satellites">SATELLITES</a><a href="/#financement">FINANCEMENT</a><a href="/acteurs/">ACTEURS</a><a href="/levees/">LEVÉES</a><a href="/investisseurs/">INVESTISSEURS</a><a href="/glossaire/">GLOSSAIRE</a>
+<a class="close burger" href="#" aria-label="Fermer le menu">FERMER</a>
+</nav>
+<a class="btn" href="https://www.linkedin.com/company/146616745/">SUIVRE</a>
+<a class="burger" href="#menu" aria-label="Ouvrir le menu">MENU</a>
+</header>
+<main class="pg carto">
+<nav class="crumb mono" aria-label="Fil d'Ariane"><a href="/">Accueil</a> / <span>Cartographie du spatial français</span></nav>
+<header class="ph1"><span class="eyebrow">Cartographie</span><h1 class="cond">Qui fait le spatial français</h1><p class="lede">98 structures en 8 secteurs : ceux qui pilotent, construisent, opèrent, financent, accompagnent et décryptent le spatial en France, civil, militaire et dual. Survolez l'anneau, zoomez par secteur, ouvrez les fiches.</p></header>
+<iframe class="carto-frame" id="carto" src="/cartographie/carte.html" title="Carte interactive de l'écosystème spatial français" loading="eager"></iframe>
+</main>
+<script>{const f=document.getElementById('carto');const fit=()=>{try{f.style.height=f.contentDocument.documentElement.scrollHeight+'px'}catch(e){}};f.addEventListener('load',()=>{fit();try{new ResizeObserver(fit).observe(f.contentDocument.body)}catch(e){}});addEventListener('resize',fit)}</script>
+<footer class="ftr">
+<span>SPACEPULSE © 2026 · TECH &amp; FINANCE DE L'INDUSTRIE SPATIALE</span>
+<nav aria-label="Pied de page"><a href="/acteurs/">ANNUAIRE</a><a href="/cartographie/">CARTOGRAPHIE</a><a href="/levees/">LEVÉES</a><a href="/investisseurs/">INVESTISSEURS</a><a href="/glossaire/">GLOSSAIRE</a><a href="https://www.linkedin.com/company/146616745/">LINKEDIN</a><a href="/mentions-legales.html">MENTIONS LÉGALES</a></nav>
+</footer>
+</body>
+</html>
